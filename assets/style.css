@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Secular+One&display=swap");
+/* font-family: 'Roboto Mono', monospace;
+font-family: 'Secular One', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgb(23, 23, 23); */
+  font-family: "Roboto Mono", monospace;
+}
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Container left */
+.container-left {
+  padding: 50px 30px;
+  background-color: black;
+  height: 100vh;
+}
+.galeri-left {
+  border: 5px solid white;
+  line-height: 0px;
+}
+.galeri-left img.big {
+  max-width: 800px;
+}
+
+/* containe right */
+.container-right {
+  padding: 30px;
+  background-color: wheat;
+  height: 100vh;
+}
+.container-right .galeri-right .judul h1 {
+  color: chocolate;
+  font-family: "Secular One", sans-serif;
+  font-size: 35px;
+  /* letter-spacing: 0.5em; */
+}
+.container-right .thumbnail {
+  margin-top: 30px;
+}
+.galeri-right .thumbnail img.small {
+  max-width: 100px;
+  border: 2px solid white;
+  cursor: pointer;
+  margin: 3px;
+}
+.galeri-right .thumbnail img.small:hover {
+  opacity: 0.7;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+.active {
+  opacity: 0.5;
+}
+
+/* ============================== RESPONSIVE =============================== */
+@media (max-width: 1238px) {
+  .galeri-right .thumbnail img.small {
+    max-width: 90px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin: 3px;
+  }
+  .galeri-left img.big {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    display: block;
+    justify-content: space-evenly;
+  }
+  .container-left {
+    padding: 50px 30px;
+    background-color: black;
+    height: 500px;
+  }
+  .galeri-left {
+    border: none;
+    line-height: 0px;
+    text-align: center;
+  }
+  .galeri-left img.big {
+    max-width: 600px;
+  }
+  .container-right {
+    padding: 30px;
+    background-color: wheat;
+    height: 100vh;
+  }
+  .galeri-right .thumbnail img.small {
+    max-width: 100px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin: 3px;
+  }
+}
+@media (max-width: 450px) {
+  .main {
+    display: block;
+    justify-content: space-evenly;
+  }
+  .container-left {
+    padding: 50px 30px;
+    background-color: black;
+    height: 350px;
+  }
+  .galeri-left {
+    border: none;
+    line-height: 0px;
+    text-align: center;
+  }
+  .galeri-left img.big {
+    max-width: 350px;
+  }
+  .container-right {
+    padding: 30px;
+    background-color: wheat;
+    height: 100vh;
+  }
+
+  .container-right .galeri-right .detail-galeri {
+    font-size: 14px;
+  }
+  .galeri-right .thumbnail img.small {
+    max-width: 80px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin: 2px;
+  }
+}
+@media (max-width: 375px) {
+  .main {
+    display: block;
+    justify-content: space-evenly;
+  }
+  .container-left {
+    padding: 30px 30px;
+    background-color: black;
+    height: 250px;
+  }
+  .galeri-left {
+    border: none;
+    line-height: 0px;
+    text-align: center;
+  }
+  .galeri-left img.big {
+    max-width: 280px;
+  }
+  .container-right .galeri-right .judul h1 {
+    font-size: 24px;
+  }
+  .container-right {
+    padding: 30px;
+    background-color: wheat;
+    height: 100vh;
+  }
+
+  .container-right .galeri-right .detail-galeri {
+    font-size: 12px;
+  }
+  .galeri-right .thumbnail img.small {
+    max-width: 60px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin: 2px;
+  }
+}
+@media (max-width: 360px) {
+  .main {
+    display: block;
+    justify-content: space-evenly;
+  }
+  .container-left {
+    padding: 30px 30px;
+    background-color: black;
+    height: 250px;
+  }
+  .galeri-left {
+    border: none;
+    line-height: 0px;
+    text-align: center;
+  }
+  .galeri-left img.big {
+    max-width: 280px;
+  }
+  .container-right .galeri-right .judul h1 {
+    font-size: 24px;
+  }
+  .container-right {
+    padding: 30px;
+    background-color: wheat;
+    height: 100vh;
+  }
+
+  .container-right .galeri-right .detail-galeri {
+    font-size: 12px;
+  }
+  .galeri-right .thumbnail img.small {
+    max-width: 60px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin: 2px;
+  }
+}
